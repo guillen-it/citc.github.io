@@ -1,9 +1,12 @@
 var toggle = document.getElementById('dark-mode-toggle');
+var logoLight = 'photos/cambridge_university_logo.svg';
+var logoDark = 'photos/ucam-logo-white-text-colour-coat-of-arms.png';
 
 function updateToggle() {
     var isDark = document.body.classList.contains('dark-mode');
     document.getElementById('icon-moon').style.display = isDark ? 'none' : 'inline';
     document.getElementById('icon-sun').style.display = isDark ? 'inline' : 'none';
+    document.getElementById('cam-logo').src = isDark ? logoDark : logoLight;
 }
 
 updateToggle();
