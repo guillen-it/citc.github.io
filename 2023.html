@@ -18,7 +18,8 @@
 
     <div class="container-fluid logo-banner">
         <a href="https://www.cam.ac.uk/">
-            <img src="photos/cambridge_university_logo.svg" alt="University of Cambridge" style="height: 46px;">
+            <img id="cam-logo" alt="University of Cambridge" style="height: 46px;">
+            <script>document.getElementById('cam-logo').src=document.body.classList.contains('dark-mode')?'photos/ucam-logo-white-text-colour-coat-of-arms.png':'photos/cambridge_university_logo.svg';</script>
         </a>
     </div>
 
